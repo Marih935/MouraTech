@@ -1,0 +1,65 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+* {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  text-decoration: none;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #487DD2;
+}
+body #cadastro {
+  margin-top: 20px;
+}
+
+#form {
+  width: 40%;
+  margin-top: -5vh;
+  box-sizing: border-box;
+  border: 1px solid #000000;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+#form #campos {
+  display: flex;
+  flex-direction: column;
+}
+#form #campos input {
+  width: 90%;
+  border-radius: 8px;
+  background-color: #BACEEE;
+}
+#form #campos p {
+  text-align: center;
+}
+#form #campos p .btn {
+  width: 50%;
+  border-radius: 8px;
+}
+#form p {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 12px;
+}
+
+.btnConta {
+  width: 200px;
+  height: 30px;
+  border-radius: 10px;
+  background-color: #BACEEE;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  justify-content: space-evenly;
+  width: 100%;
+}
+footer a {
+  color: black;
+}/*# sourceMappingURL=style.css.map */

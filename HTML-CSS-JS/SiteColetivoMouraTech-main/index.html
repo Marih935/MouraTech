@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sky-Trip</title>
+    <meta name="keywords" content ="Viagem,Hospedagem,Hotel,Passagens áreas">
+    <meta name="author" content ="">
+    <!-- CSS only -->
+    <link rel="stylesheet" href="./style/style.css">
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon/favicon-16x16.png">
+    <link rel="manifest" href="./assets/favicon/site.webmanifest">
+    <link rel="mask-icon" href="./assets/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
+</head>
+<body onload="infinity();">
+    <header>
+        <div id="nav-bar">
+            <a href="index.html"><img src="./assets/imgs/logo.png" alt="Logo Sky-Trip" class="globo"></a>
+            <div id="opt">
+                <img class="login" id="fav" src="./assets/imgs/favoritos.png" alt="Ir para favoritos">
+                <img class="login" id="login" src="./assets/imgs/user.png" alt="Ir pra login">
+                <p>
+                    <a href="login.html">Entre ou <br>cadastre-se</a>
+                </p>
+            </div>
+        </div>
+        <div><input type="text" class="search-text" placeholder="Para onde você deseja ir?"></div>
+    </header>
+    <main>
+        <section id="carrosel_mobile">
+            <h2>Descubra novos destinos!</h2>
+            <div class="slider_mobile">
+                <div class="slides">
+                    <!--Slide images-->
+                        <img src="./assets/imgs/destino1.png" alt="Belo Jardim" id="belojardim">
+                        <img src="./assets/imgs/destino2.png" alt="Sanharó" id="sanharo">
+                        <img src="./assets/imgs/destino3.png" alt="Tacaimbó" id="tacaimbo">
+                    <!--Fim Slide images-->
+                </div>
+            </div>
+        </section>
+        <section class="container">
+            <div class="carrossel">
+                <h1>Descubra novos destinos!</h1>
+                <div class="destinos">
+                    <div class="local" id="img">
+                        <a href="https://pt.wikipedia.org/wiki/Belo_Jardim"><img src="./assets/imgs/destino1.png" alt="Belo Jardim"></a>
+                        <a href="https://pt.wikipedia.org/wiki/Sanhar%C3%B3"><img src="./assets/imgs/destino2.png" alt="Sanharó"></a>
+                        <a href="https://pt.wikipedia.org/wiki/Tacaimb%C3%B3"><img src="./assets/imgs/destino3.png" alt="Tacaimbó"></a>
+                    </div>
+                </div>
+            </div>
+            <div class="imgs">
+               <div id="firstimgs">
+                <a href="#promocao">
+                    <p class="produto">
+                        <img src="./assets/imgs/pacotes.png" alt="Logo de pacotes">
+                        Pacotes completos
+                    </p>    
+                </a>
+                <a href="#passagens_aereas">
+                    <p class="produto">
+                        <img src="./assets/imgs/passagens.png" alt="Logo de passagens">
+                        Passagens áereas
+                    </p>
+                </a>
+                <a href="#hospedagem">
+                    <p class="produto">
+                        <img src="./assets/imgs/hospedagem.png" alt="Logo de hospedagem">
+                        Hospedagem
+                    </p>
+                </a>
+               </div>
+               <div id="lastimgs">
+                    <a href="#passagens_aereas">
+                        <p class="produto">
+                            <img src="./assets/imgs/internacional.png" alt="Logo de viagens nacionais">
+                            Viagens nacionais
+                        </p>
+                    </a>
+                    <a href="#passagens_aereas">
+                        <p class="produto">
+                            <img src="./assets/imgs/nacional.png" alt="Logo de viagens internacionais">
+                            Viagens internacionais
+                        </p>
+                    </a>
+               </div>
+            </div>
+        </section>
+        <section id="buscando_aeroporto">
+            <h2>Escolha seu pacote</h2>
+            <div id="escolher_pacote">
+                <p>Saindo de:<br><input type="text" placeholder="Busque por aeroporto" class="azul-claro"></p>
+                <p>Destino para:<br><input type="text"  placeholder="Busque por aeroporto" class="azul-claro"></p>
+                <p>Escolha as datas:<br><input type="date" name="Inicio" id="data_de_inicio" class="azul-claro"><input type="date" name="Fim" id="data_de_fim" class="azul-claro"></p>
+                <p>Passageiros:<br><input type="number" name="qtdpessoas" id="num_de_passageiros" class="azul-claro"> </p>
+            </div>
+            <div id="buscar">
+                <input type="button" value="BUSCAR" id="botao_buscar">
+            </div> 
+        </section>
+        <h3 class="titulos">Aproveite as promoções</h3>
+        <section class="promocao">
+            <div class="conteinerAnuncio">
+                <div class="anuncio">
+                    <img src="./assets/imgs/pacotecompleto.png" alt="Pacotes Completos"><h3>Pacotes Completos</h3>
+               </div>
+               <pre>
+                Escolha seu próximo 
+                destino com ofertas 
+                imperdíveis!
+                </pre>
+            </div>
+            <div class="promocoes">
+                <div class="oferta">
+                    <img src="./assets/imgs/maceio.png" alt="Maceió"><br>
+                    <input class="promo" type="button" value="Promoção">
+                    <div class="texto">
+                        <p class="destaque">Maceió<br></p>
+                        <p>3 diárias a partir de<br></p>
+                        <p class="destaque"><strong>R$ 200</strong></p>
+                    </div>
+                </div>
+                <div class="oferta">
+                    <img src="./assets/imgs/portoseguro.png" alt="Xucuru"><br>
+                    <input class="promo" type="button" value="Promoção">
+                    <div class="texto">
+                        <p class="destaque">Xucuru<br></p>
+                        <p>3 diárias a partir de<br></p>
+                        <p class="destaque"><strong>R$ 300</strong></p>
+                    </div>
+                </div>
+                <div class="oferta">
+                    <img src="./assets/imgs/portoseguro.png" alt="Mutuca"><br>
+                    <input class="promo" type="button" value="Promoção">
+                    <div class="texto">
+                        <p class="destaque">Mutuca<br></p>
+                        <p>3 diárias a partir de<br></p>
+                        <p class="destaque"><strong>R$ 300</strong></p>
+                    </div>
+                </div>  
+                <div class="oferta">
+                    <img src="./assets/imgs/portoseguro.png" alt="Serra dos Ventos"><br>
+                    <input class="promo" type="button" value="Promoção">
+                    <div class="texto">
+                        <p class="destaque">Serra dos Ventos<br></p>
+                        <p>3 diárias a partir de<br></p>
+                        <p class="destaque">R$ 300</p>
+                    </div>
+                </div>  
+            </div>
+            <input type="button" value="Ver todos os pacotes" class="todos">
+        </section>
+        <h3 class="titulos1">Passagens Áereas</h3>
+        <section class="passagens_aereas">
+            <p class="btn">
+               <input type="button" value="Nacional" id="nacional">
+               <input type="button" value="Internacional" id="internacional">
+            </p>
+            <div class="promocoes">
+                <div class="oferta">
+                    <img src="./assets/imgs/portoseguro.png" alt="Buíque"><br>
+                    <div class="texto">
+                        <p class="destaque">Buíque<br></p>
+                        <p class="mid">A partir de<br></p>
+                        <p class="destaque"><strong>R$ 650</strong></p>
+                    </div>
+                </div> 
+                <div class="oferta">
+                    <img src="./assets/imgs/portoseguro.png" alt="Pesqueira"><br>
+                    <div class="texto">
+                        <p class="destaque">Pesqueira<br></p>
+                        <p class="mid">A partir de<br></p>
+                        <p class="destaque"><strong>R$ 700</strong></p>
+                    </div>
+                </div>  
+                <div class="oferta">
+                    <img src="./assets/imgs/portoseguro.png" alt="Caruaru"><br>
+                    <div class="texto">
+                        <p class="destaque">Caruaru<br></p>
+                        <p class="mid">A partir de<br></p>
+                        <p class="destaque">R$ 200</p>
+                    </div>
+                </div>  
+            </div>
+            <input type="button" value="Ver todos os destinos" class="todos">
+            <div class="conteinerAnuncio">
+                <div class="anuncio">
+                    <h3 class="left">Passagens Áereas<br>Saída: Recife</h3><img src="./assets/imgs/area.png" alt="Passagens Áreas">
+               </div>
+            </div>
+        </section>
+        <h3 class="titulos1">Hospedagem</h3>
+        <section class="promocao">
+            <div class="conteinerAnuncio">
+                <div class="anuncio">
+                    <img src="./assets/imgs/hotel.png" alt="Hospedagem"><h3>Hospedagem</h3>
+               </div>
+               <pre>
+                Aproveite seu destino
+                da melhor maneira!
+                </pre>
+            </div>
+            <div class="promocoes">
+                <div class="oferta">
+                    <img src="./assets/imgs/batinga.png" alt="batinga"><br>
+                    <div class="texto">
+                        <p class="destaque">Hotel X<br></p>
+                        <p>A partir de<br></p>
+                        <p class="destaque"><strong>R$ 200</strong></p>
+                    </div>
+                </div>
+                <div class="oferta">
+                    <img src="./assets/imgs/batinga.png" alt="batinga"><br>
+                    <div class="texto">
+                        <p class="destaque">Hotel Y<br></p>
+                        <p>A partir de<br></p>
+                        <p class="destaque"><strong>R$ 300</strong></p>
+                    </div>
+                </div>
+                <div class="oferta">
+                    <img src="./assets/imgs/batinga.png" alt="batinga"><br>
+                    <div class="texto">
+                        <p class="destaque">Hotel W<br></p>
+                        <p>A partir de<br></p>
+                        <p class="destaque"><strong>R$ 300</strong></p>
+                    </div>
+                </div>  
+                <div class="oferta">
+                    <img src="./assets/imgs/batinga.png" alt="batinga"><br>
+                    <div class="texto">
+                        <p class="destaque">Hotel Z<br></p>
+                        <p>A partir de<br></p>
+                        <p class="destaque">R$ 300</p>
+                    </div>
+                </div>  
+            </div>
+            <input type="button" value="Ver todos os hotéis" class="todos">
+        </section>
+        <h5>Newsletter</h5>
+        <div class="news_letter">
+            <div class="logo">
+                <img src="./assets/imgs/news.png" alt="newsletter">
+            </div>
+            <div class="form">
+                <p>
+                    Inscreva-se no nosso newsletter 
+                    e acompanhe todas as ofertas!
+                </p>
+                <div class="info">
+                    <p>
+                        <input type="text" name="name" id="nickname" placeholder="Como devemos te chamar?" class="cadastro">
+                        <input type="email" name="gmail" id="Email" placeholder="Qual o seu e-mail?" class="cadastro">
+                        <input class="btn" type="button" value="Assine já!" id="assine">
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div id="logoend">
+            <img src="./assets/imgs/logopreto.png" alt="Logo" id="logo">
+            <p id="endereco">
+                <strong>SKY-TRIP AGÊNCIA DE VIAGENS<br></strong>
+                CNPJ xx.xxx.xxx/xxxx-xx <br>
+                Rua das Flores, 123 - Funcionários <br>
+                CEP xx.xxx-xxx, Belo Jardim/PE <br>
+            </p>
+        </div>
+        <div id="informacoes">
+            <p><a href="#">Quem somos</a></p>
+            <p><a href="#">Trabalhe conosco</a></p>
+            <p><a href="#">Termos e condições</a></p>
+            <p><a href="#">Política de privacidade</a></p>
+        </div>
+        <p id="baixe">Baixe nosso app</p>
+        <div id="ios_android">
+            <a href="#"><img src="./assets/imgs/android.png" alt="App para android"></a>
+            <a href="#"><img src="./assets/imgs/ios.png" alt="App para ios" id="ios"></a>
+        </div>
+        <div id="contatos">
+            <div class="linha"></div>
+            <p id="pagamento">Formas de pagamento<br>
+                Pague no cartão de crédito em até 12X com juros, boleto à vista ou parcelado, transferência bancária ou com pix!
+                <img src="assets/imgs/_.png" alt="Formas de pagamento"></p>
+            <div class="linha"></div>
+            <p id="seguir">Siga-nós!</p>
+        </div>
+        <div id="imgs">
+            <img src="./assets/imgs/telegram.png" alt="Telegram">
+            <img src="./assets/imgs/twitter.png" alt="Twitter">
+            <img src="./assets/imgs/facebook.png" alt="Facebook">
+            <img src="./assets/imgs/ins.png" alt="Instagram">
+            <img src="./assets/imgs/youtube.png" alt="Youtube">
+            <img src="./assets/imgs/whats.png" alt="Zap zap">
+        </div>
+    </footer>
+    <script src="./scripts/script.js"></script>
+    <script src="scripts/sliderMobile.js"></script>
+</body>
+</html>

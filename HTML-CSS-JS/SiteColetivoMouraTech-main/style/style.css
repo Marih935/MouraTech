@@ -1,0 +1,768 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&display=swap");
+* {
+  margin: 0;
+  font-family: "Quicksand", sans-serif;
+  text-decoration: none;
+}
+
+.titulos {
+  display: none;
+}
+
+.titulos1 {
+  display: none;
+}
+
+h5 {
+  text-align: center;
+  margin-top: 1rem;
+  font-size: 18px;
+}
+
+header {
+  background-color: #487DD2;
+}
+header #nav-bar {
+  display: flex;
+  height: 15vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: black;
+}
+header #nav-bar img.globo {
+  margin-top: 5rem;
+  width: 30vw;
+}
+header #opt {
+  height: 20vh;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin: 0;
+}
+header #opt #fav {
+  width: 90px;
+  height: 102.86px;
+}
+header #opt #login {
+  width: 100px;
+}
+header #opt img {
+  margin-top: 2rem;
+}
+header #opt p {
+  padding-top: 2rem;
+  padding-right: 2rem;
+}
+header #opt a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: black;
+}
+header div {
+  text-align: center;
+  padding-bottom: 20px;
+}
+header div input {
+  box-sizing: border-box;
+  width: 614px;
+  height: 47px;
+  background: #BACEEE;
+  border: 2px solid #000000;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+}
+
+.container {
+  display: flex;
+  background: #BACEEE;
+  width: 100%;
+}
+.container .carrossel {
+  align-items: center;
+  width: 50vw;
+}
+.container .carrossel h1 {
+  margin-top: 1rem;
+  align-items: center;
+  margin-left: 30%;
+}
+.container .carrossel .destinos {
+  margin-top: 1rem;
+  margin-left: 2rem;
+  overflow: hidden;
+  height: 280px;
+  width: 593px;
+}
+.container .carrossel .destinos .local {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  transform: translateX(0);
+}
+.container .carrossel .destinos .local img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 280px;
+  width: 593px;
+}
+.container .imgs {
+  display: block;
+  width: 50vw;
+}
+.container .imgs #firstimgs {
+  display: flex;
+  justify-content: space-around;
+}
+.container .imgs #firstimgs img {
+  width: 186px;
+  height: 180px;
+}
+.container .imgs #lastimgs {
+  display: flex;
+  justify-content: space-around;
+}
+.container .imgs #lastimgs img {
+  width: 160px;
+  height: 150px;
+}
+.container .produto {
+  display: flex;
+  flex-direction: column;
+  color: black;
+  align-items: center;
+  font-size: 17px;
+}
+
+#buscando_aeroporto {
+  margin-left: 24px;
+  margin-right: 24px;
+  margin-top: 1rem;
+  box-sizing: border-box;
+  height: 200px;
+  border: 2px solid #000000;
+  border-radius: 12px;
+  background-color: #487DD2;
+  width: 95%;
+}
+#buscando_aeroporto h2 {
+  margin-top: 1rem;
+  margin-left: 1rem;
+  text-align: left;
+}
+#buscando_aeroporto .azul-claro {
+  background-color: #BACEEE;
+}
+#buscando_aeroporto #escolher_pacote {
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+}
+#buscando_aeroporto #escolher_pacote p {
+  font-size: 20px;
+  margin-top: 10px;
+  text-align: justify;
+}
+#buscando_aeroporto #escolher_pacote p input {
+  background: #BACEEE;
+  width: 174px;
+  height: 30px;
+  border: 2px solid #000000;
+  border-radius: 7px;
+}
+#buscando_aeroporto #buscar input {
+  margin-top: 2rem;
+  margin-left: 83.5%;
+  font-size: 18px;
+  color: white;
+  width: 164px;
+  height: 41px;
+  background: #487DD2;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 12px;
+}
+
+.promocao {
+  display: flex;
+  margin-top: 2rem;
+}
+.promocao .todos {
+  display: none;
+}
+.promocao h3 {
+  margin-top: 90px;
+}
+.promocao #conteinerAnuncio {
+  display: block;
+}
+.promocao .anuncio {
+  display: flex;
+}
+.promocao .anuncio .left {
+  margin-left: 100px;
+}
+.promocao pre {
+  text-align: center;
+  font-size: 18px;
+}
+.promocao .promocoes {
+  margin-left: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.promocao .promocoes .oferta {
+  margin-left: 10px;
+  font-size: 18px;
+  display: block;
+  width: 200px;
+  height: 250px;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  border-radius: 12px;
+}
+.promocao .promocoes .oferta p {
+  display: block;
+  justify-content: center;
+  font-size: 16px;
+  margin-left: 30px;
+}
+.promocao .promocoes .oferta .mid {
+  text-align: center;
+}
+.promocao .promocoes .oferta img {
+  width: 100%;
+  border-radius: 12px;
+}
+.promocao .promocoes .oferta input {
+  font-size: 16px;
+  margin-left: 45px;
+  background: rgb(236, 97, 97);
+  border: 2px solid #487DD2;
+  border-radius: 12px;
+}
+.promocao .destaque {
+  text-align: justify;
+  font-weight: bold;
+}
+.promocao .btn {
+  display: flex;
+  height: 30px;
+}
+
+.passagens_aereas {
+  display: flex;
+  margin-top: 2rem;
+}
+.passagens_aereas .promocoes {
+  margin-left: 50px;
+  display: flex;
+  justify-content: space-around;
+}
+.passagens_aereas .promocoes .oferta {
+  margin-left: 10px;
+  font-size: 18px;
+  display: block;
+  width: 200px;
+  height: 250px;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  border-radius: 12px;
+}
+.passagens_aereas .promocoes .oferta p {
+  display: block;
+  justify-content: center;
+  font-size: 16px;
+  margin-left: 30px;
+}
+.passagens_aereas .promocoes .oferta .mid {
+  text-align: center;
+}
+.passagens_aereas .promocoes .oferta img {
+  width: 100%;
+  border-radius: 12px;
+}
+.passagens_aereas .promocoes .oferta input {
+  font-size: 16px;
+  margin-left: 45px;
+  background: rgb(236, 97, 97);
+  border: 2px solid #487DD2;
+  border-radius: 12px;
+}
+.passagens_aereas .destaque {
+  text-align: justify;
+  font-weight: bold;
+}
+.passagens_aereas .todos {
+  display: none;
+}
+.passagens_aereas #nacional {
+  margin-top: 1rem;
+  box-sizing: border-box;
+  width: 100px;
+  height: 41px;
+  background: #BACEEE;
+  border: 2px solid #487DD2;
+  border-radius: 12px 0px 0px 12px;
+}
+.passagens_aereas #internacional {
+  font-style: italic;
+  width: 100px;
+  height: 41px;
+  border: 2px solid #487DD2;
+  border-radius: 0px 12px 12px 0px;
+}
+.passagens_aereas #conteinerAnuncio {
+  display: block;
+}
+.passagens_aereas .anuncio {
+  display: flex;
+}
+.passagens_aereas .anuncio .left {
+  margin-left: 100px;
+}
+
+.news_letter {
+  margin-top: 1rem;
+  display: flex;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  border-radius: 12px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.news_letter .form {
+  font-size: 18px;
+  margin-top: 2%;
+  margin-left: 20%;
+  display: block;
+}
+.news_letter .form .info {
+  display: flex;
+  justify-content: space-around;
+}
+.news_letter .form .info input {
+  margin-top: 5%;
+  background: #BACEEE;
+  border: 1px solid #000000;
+  border-radius: 7px;
+  width: 220px;
+  height: 30px;
+}
+.news_letter .form .info .btn {
+  width: 100px;
+  margin-bottom: 1rem;
+}
+
+footer {
+  font-size: 18px;
+  margin-top: 1rem;
+  background-color: #3965AB;
+  width: 100%;
+}
+footer #logoend {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+}
+footer #logoend p {
+  margin-top: 2rem;
+}
+footer #informacoes {
+  display: flex;
+  justify-content: space-around;
+}
+footer #informacoes a {
+  color: #000000;
+}
+footer #baixe {
+  margin-top: 2rem;
+  text-align: center;
+}
+footer #ios_android {
+  display: flex;
+  justify-content: space-evenly;
+}
+footer #ios_android img {
+  width: 80%;
+}
+footer #pagamento {
+  text-align: center;
+}
+footer #pagamento img {
+  display: none;
+}
+footer #seguir {
+  margin-top: 1rem;
+  text-align: center;
+}
+footer #imgs {
+  display: flex;
+  justify-content: center;
+}
+
+main #carrosel_mobile {
+  display: none;
+}
+
+@media only screen and (max-width: 1205px) {
+  .titulos {
+    margin-top: 200px;
+    display: block;
+    margin-left: 30%;
+  }
+  .titulos1 {
+    margin-top: 20px;
+    display: block;
+    margin-left: 30%;
+  }
+  header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  header div#nav-bar {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  header div#nav-bar div#opt {
+    width: 10vw;
+  }
+  header div {
+    margin: auto;
+    padding-bottom: 10px;
+  }
+  header div input {
+    box-sizing: border-box;
+    width: 50vw;
+    height: 5vh;
+    background: #BACEEE;
+    border: 2px solid #000000;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 12px;
+  }
+  main .container {
+    display: none;
+  }
+  main #carrosel_mobile {
+    display: block;
+    background-color: #BACEEE;
+    padding: 3vh 0;
+  }
+  main #carrosel_mobile h2 {
+    text-align: center;
+  }
+  main .slider_mobile {
+    display: block;
+    margin: 3vh auto;
+    width: 80vw;
+    height: 300px;
+    overflow: hidden;
+    box-shadow: 1px 1px 1px 1px rgba(0, 0, 0, 0.477);
+  }
+  main .slider_mobile .slides {
+    display: flex;
+    width: 300vw;
+    height: 300px;
+  }
+  main .slider_mobile .slides input {
+    display: none;
+  }
+  main .slider_mobile .slides img {
+    width: 80vw;
+  }
+  main .slider_mobile .manual-navigation {
+    position: absolute;
+    width: 80vw;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+  main .slider_mobile .manual-navigation .manual-btn {
+    border: 2px solid #FFF;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  main #buscando_aeroporto {
+    border: none;
+    background-color: white;
+  }
+  main #buscando_aeroporto h2 {
+    display: block;
+  }
+  main #buscando_aeroporto #fake {
+    display: block;
+  }
+  main #buscando_aeroporto .azul-claro {
+    background-color: #BACEEE;
+  }
+  main #buscando_aeroporto #escolher_pacote {
+    display: block;
+    margin: auto;
+    height: 100px;
+  }
+  main #buscando_aeroporto #escolher_pacote p {
+    text-align: justify;
+  }
+  main #buscando_aeroporto #escolher_pacote p input {
+    width: 40vw;
+    border-radius: 5px;
+    padding: 3px;
+  }
+  main #buscando_aeroporto #buscar input {
+    margin-top: 200px;
+    margin-left: 25%;
+  }
+  main #hospedagem {
+    display: flex;
+    flex-direction: column;
+  }
+  main #hospedagem h1 {
+    text-align: center;
+    padding: 20px 0;
+  }
+  main #hospedagem #hoteis {
+    background-color: white;
+    color: #487DD2;
+    border-radius: 15px;
+    border: 1px solid #487DD2;
+    width: 40vw;
+    padding: 6px;
+    margin: auto;
+  }
+  main #hospedagem div {
+    display: flex;
+    border: 2px solid black;
+    width: 50vw;
+    border-radius: 23px;
+    margin: auto;
+    margin-bottom: 10px;
+  }
+  main #hospedagem div img {
+    width: 30vw;
+    border-top-left-radius: 18px;
+    border-bottom-left-radius: 18px;
+  }
+  main #hospedagem div p {
+    flex-direction: column;
+    padding-left: 8px;
+    font-size: 3vw;
+  }
+  main .passagens_aereas {
+    display: block;
+    flex-direction: column;
+    text-align: center;
+  }
+  main .passagens_aereas p.btn {
+    display: flex;
+    justify-content: center;
+  }
+  main .passagens_aereas .destaque {
+    text-align: center;
+    font-weight: bold;
+  }
+  main .passagens_aereas #nacional {
+    width: 100px;
+    height: 41px;
+    background: #BACEEE;
+    border: 2px solid #487DD2;
+    border-radius: 12px 0px 0px 12px;
+    margin-top: 0px;
+  }
+  main .passagens_aereas #internacional {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+    color: grey;
+    border: 1px solid #487DD2;
+  }
+  main .passagens_aereas .conteinerAnuncio {
+    display: none;
+  }
+  main .passagens_aereas .promocoes {
+    display: block;
+    font-size: 18px;
+  }
+  main .passagens_aereas .promocoes .oferta {
+    display: flex;
+    margin-top: 1rem;
+    height: 100px;
+    width: 80%;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 12px;
+  }
+  main .passagens_aereas .promocoes .oferta img {
+    height: 100%;
+    width: 50%;
+  }
+  main .passagens_aereas .promocoes .oferta .texto {
+    width: 40%;
+  }
+  main .passagens_aereas .todos {
+    display: block;
+    margin-top: 1rem;
+    background: #BACEEE;
+    border: 1px solid #000000;
+    border-radius: 7px;
+    width: 200px;
+    height: 40px;
+    margin-left: 30%;
+  }
+  main .promocao {
+    display: block;
+    flex-direction: column;
+    text-align: center;
+  }
+  main .promocao .todos {
+    display: block;
+    margin-top: 1rem;
+    margin-left: 30%;
+    background: #BACEEE;
+    border: 1px solid #000000;
+    border-radius: 7px;
+    width: 200px;
+    height: 40px;
+  }
+  main .promocao .destaque {
+    text-align: center;
+    font-weight: bold;
+  }
+  main .promocao .conteinerAnuncio {
+    display: none;
+  }
+  main .promocao .anuncio {
+    display: none;
+  }
+  main .promocao .promocoes {
+    display: block;
+  }
+  main .promocao .promocoes .oferta {
+    display: flex;
+    margin-top: 1rem;
+    height: 110px;
+    width: 80%;
+    box-sizing: border-box;
+    border: 2px solid #000000;
+    border-radius: 12px;
+  }
+  main .promocao .promocoes .oferta .promo {
+    display: none;
+  }
+  main .promocao .promocoes .oferta .mid {
+    text-align: center;
+  }
+  main .promocao .promocoes .oferta img {
+    height: 100%;
+    width: 50%;
+  }
+  main .promocao .promocoes .oferta .texto {
+    width: 60%;
+  }
+  main .promocao .promocoes .oferta input {
+    font-size: 16px;
+    margin-left: 45px;
+    background: rgb(236, 97, 97);
+    border: 2px solid #487DD2;
+    border-radius: 12px;
+  }
+  main .promocao .destaque {
+    text-align: center;
+    font-weight: bold;
+  }
+  main .promocao .btn {
+    display: flex;
+    height: 30px;
+  }
+  main .news_letter {
+    display: block;
+    padding-top: 25px;
+    text-align: center;
+    box-sizing: border-box;
+    border: 1px solid #000000;
+    border-radius: 12px;
+  }
+  main .news_letter .form {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    border: none;
+  }
+  main .news_letter .form p {
+    text-align: center;
+    padding-top: 10px;
+  }
+  main .news_letter .form input.cadastro {
+    background-color: #BACEEE;
+    margin-bottom: 10px;
+    border-radius: 15px;
+    width: 40vw;
+  }
+  main .news_letter .form p#assinatura {
+    display: flex;
+    justify-content: end;
+  }
+  main .news_letter .form p#assinatura input#assine {
+    background-color: #BACEEE;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border-radius: 15px;
+  }
+  footer {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #487DD2;
+  }
+  footer h3 {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  footer #endereco {
+    text-align: center;
+    padding-bottom: 20px;
+  }
+  footer #informacoes {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+  }
+  footer #informacoes a {
+    color: #000000;
+  }
+  footer #informacoes div {
+    padding-left: 20px;
+  }
+  footer p {
+    text-align: center;
+  }
+  footer #ios_android {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: -80px;
+  }
+  footer #ios_android #ios {
+    padding-top: 12px;
+  }
+  footer #ios_android img {
+    width: 80%;
+  }
+  footer #contatos {
+    margin-top: -50px;
+  }
+  footer .linha {
+    width: 99%;
+    border: 1px solid black;
+  }
+  footer #pagamento {
+    padding: 10px;
+  }
+  footer #seguir {
+    padding: 10px;
+  }
+}/*# sourceMappingURL=style.css.map */
