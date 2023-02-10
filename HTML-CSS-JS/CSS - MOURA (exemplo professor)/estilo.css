@@ -1,0 +1,19 @@
+*{
+    border: 0;
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box; /*+espaço pro conteudo, ao contrário do border-box que leva em conta as bordas*/
+}
+
+img{
+    width: 150px;
+    height: 100px;
+    border: 2px solid black;
+    padding: 5px;
+}
+
+#img01{ /*id tem mais prioridade do que o head*/
+    float: left;
+    width: 50px;
+    height: 50px;
+}
