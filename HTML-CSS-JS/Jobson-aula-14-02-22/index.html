@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .bandeiras{
+            width: 40px;
+            height: 40px;
+        }
+
+        #bandeiraBrasil{
+            width: 100px;
+            height: 90px;
+            position: fixed;
+            display: block; 
+            bottom: 20px;
+            right: 20px;
+            margin: 10px auto; 
+            z-index: 1; /* para que a imagem fique acima do texto */
+        }
+
+        #bandeiraCroacia{
+            width: 100px;
+            height: 90px;
+            position: fixed;
+            display: block; 
+            bottom: 40px;
+            right: 40px;
+            margin: 10px auto; 
+            z-index: 2;
+        }
+
+        li{
+            display: block;
+        }
+
+        #jogo02{
+            display: none; /* para que a imagem fique abaixo da outra NÃO ESTÁ VISÍVEL */
+        }
+
+        #jogos p{
+            display: inline;
+        }
+    </style>
+</head>
+<body>
+    <section id="jogos">
+        <ul>
+            <li>
+                <img class="bandeiras" src="./bandeiraCatar.png" alt="Bandeira do Catar">
+
+                <p>Catar</p>
+                <p>X</p>
+                <p>Equador</p>
+
+                <img class="bandeiras" src="./bandeiraEquador.png" alt="Bandeira do Equador">
+            </li>
+            <li id="jogo02">Jogo 2</li>
+            <li>Jogo 3</li>
+        </ul>
+    </section>
+
+    <section id="classificacao">
+
+    </section>
+
+    <p>teste1</p>
+    <p>teste2</p>
+
+    <img id="bandeiraBrasil" src="./bandeiraBrasil.png" alt="Bandeira do Brasil">
+    <img id="bandeiraCroacia" src="./bandeiraCroacia.png" alt="Bandeira da Croácia">
+</body>
+</html>
