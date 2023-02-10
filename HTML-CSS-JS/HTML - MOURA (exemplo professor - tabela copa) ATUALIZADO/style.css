@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: static;
+    box-sizing: content-box;
+}
+
+/*Mobile first*/
+/*Extra small devices (Smartphones) max-width: 576px*/
+@media only screen and (max-width: 576px){
+    html{
+        font-size: 12px;
+    }
+    header{
+        font-size: 100wv;
+        background-color: rgb(0, 36, 125);
+        color: #fff;
+        border: 1px solid rgb(0, 36, 125);
+    }
+    header h1{
+        font-size: 2rem; 
+        text-align: center;
+        margin: 10px;
+    }
+    header nav ul{
+        text-align: center;
+        width: 100vw;
+    }
+    header nav ul li{
+        display: inline-block;
+        font-size: 2rem;
+    }
+    header nav ul li a{
+        color: #fff;
+        text-decoration: none;
+    }
+    nav{
+        font-size: 100wv; 
+        background-color: rgb(0, 51, 171);
+        height: 40px;
+    }
+    nav span{
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 576px){
+    
+}
