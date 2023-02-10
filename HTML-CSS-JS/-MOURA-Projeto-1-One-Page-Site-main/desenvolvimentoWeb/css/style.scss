@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    width: 100vw;
+    height: 150px;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    background-color: black;
+    justify-content: space-between;
+
+    img{
+        width: 250px;
+        height: 250px;
+    }
+
+    nav{
+        display: flex;
+        height: 150px;
+        margin-right: 50px;
+        align-items: center;
+        flex-direction: row;
+
+        ul{
+            gap: 30px;
+            display: flex;
+            list-style: none;
+            flex-direction: row;
+
+            li{
+                a{
+                    color: white;
+                    font-size: 20px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

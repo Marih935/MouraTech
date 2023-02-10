@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  width: 100vw;
+  height: 150px;
+  color: white;
+  display: flex;
+  flex-direction: row;
+  background-color: black;
+  justify-content: space-between;
+}
+header img {
+  width: 250px;
+  height: 250px;
+}
+header nav {
+  display: flex;
+  height: 150px;
+  margin-right: 50px;
+  align-items: center;
+  flex-direction: row;
+}
+header nav ul {
+  gap: 30px;
+  display: flex;
+  list-style: none;
+  flex-direction: row;
+}
+header nav ul li a {
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
